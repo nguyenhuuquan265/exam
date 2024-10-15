@@ -1,0 +1,33 @@
+<!-- templates/add_appointments.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Appointments</title>
+</head>
+<body>
+    <h1>Add 3 Appointments</h1>
+    <form action="/add_appointments" method="POST">
+        Appointment 1:<br>
+        Patient Name: <input type="text" name="patient_name1"><br>
+        Doctor Name: <input type="text" name="doctor_name1"><br>
+        Reason: <input type="text" name="reason1"><br>
+        Date: <input type="date" name="date1"><br><br>
+
+        Appointment 2:<br>
+        Patient Name: <input type="text" name="patient_name2"><br>
+        Doctor Name: <input type="text" name="doctor_name2"><br>
+        Reason: <input type="text" name="reason2"><br>
+        Date: <input type="date" name="date2"><br><br>
+
+        Appointment 3:<br>
+        Patient Name: <input type="text" name="patient_name3"><br>
+        Doctor Name: <input type="text" name="doctor_name3"><br>
+        Reason: <input type="text" name="reason3"><br>
+        Date: <input type="date" name="date3"><br><br>
+
+        <button type="submit">Add Appointments</button>
+    </form>
+</body>
+</html>

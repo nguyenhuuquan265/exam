@@ -1,0 +1,40 @@
+<!-- templates/today_appointments.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Appointments</title>
+</head>
+<body>
+    <h1>Today's Appointments</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Address</th>
+                <th>No</th>
+                <th>Patient Name</th>
+                <th>Birthday</th>
+                <th>Gender</th>
+                <th>Doctor Name</th>
+                <th>Status</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for appointment in appointments %}
+            <tr>
+                <td>{{ appointment['address'] }}</td>
+                <td>{{ loop.index }}</td>
+                <td>{{ appointment['patient_name'] }}</td>
+                <td>{{ appointment['birthday'] }}</td>
+                <td>{{ appointment['gender'] }}</td>
+                <td>{{ appointment['doctor_name'] }}</td>
+                <td>{{ appointment['status'] }}</td>
+                <td>{{ appointment['note'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

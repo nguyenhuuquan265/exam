@@ -1,0 +1,33 @@
+<!-- templates/add_patients.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Patients</title>
+</head>
+<body>
+    <h1>Add 3 Patients</h1>
+    <form action="/add_patients" method="POST">
+        <label>Patient 1:</label><br>
+        Name: <input type="text" name="name1"><br>
+        Birthday: <input type="date" name="birthday1"><br>
+        Gender: <input type="text" name="gender1"><br>
+        Address: <input type="text" name="address1"><br><br>
+
+        <label>Patient 2:</label><br>
+        Name: <input type="text" name="name2"><br>
+        Birthday: <input type="date" name="birthday2"><br>
+        Gender: <input type="text" name="gender2"><br>
+        Address: <input type="text" name="address2"><br><br>
+
+        <label>Patient 3:</label><br>
+        Name: <input type="text" name="name3"><br>
+        Birthday: <input type="date" name="birthday3"><br>
+        Gender: <input type="text" name="gender3"><br>
+        Address: <input type="text" name="address3"><br><br>
+
+        <button type="submit">Add Patients</button>
+    </form>
+</body>
+</html>
